@@ -1,0 +1,4 @@
+E:\VB.NEt\F6Control\serialTIFR\bin\Debug\serialTIFR.dll
+E:\VB.NEt\F6Control\serialTIFR\bin\Debug\serialTIFR.pdb
+E:\VB.NEt\F6Control\serialTIFR\obj\Debug\serialTIFR.dll
+E:\VB.NEt\F6Control\serialTIFR\obj\Debug\serialTIFR.pdb

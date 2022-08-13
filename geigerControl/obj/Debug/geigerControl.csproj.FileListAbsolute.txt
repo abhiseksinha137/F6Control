@@ -1,0 +1,12 @@
+E:\VB.NEt\F6Control\geigerControl\bin\Debug\geigerControl.pdb
+E:\VB.NEt\F6Control\geigerControl\bin\Debug\customControl.dll
+E:\VB.NEt\F6Control\geigerControl\bin\Debug\customControl.pdb
+E:\VB.NEt\F6Control\geigerControl\obj\Debug\geigerControl.Form1.resources
+E:\VB.NEt\F6Control\geigerControl\obj\Debug\geigerControl.Properties.Resources.resources
+E:\VB.NEt\F6Control\geigerControl\obj\Debug\geigerControl.csproj.GenerateResource.Cache
+E:\VB.NEt\F6Control\geigerControl\obj\Debug\geigerControl.pdb
+E:\VB.NEt\F6Control\geigerControl\obj\Debug\geigerControl.Form2.resources
+E:\VB.NEt\F6Control\geigerControl\bin\Debug\geigerControl.exe.config
+E:\VB.NEt\F6Control\geigerControl\bin\Debug\geigerControl.exe
+E:\VB.NEt\F6Control\geigerControl\obj\Debug\geigerControl.exe
+E:\VB.NEt\F6Control\geigerControl\obj\Debug\geigerControl.csprojResolveAssemblyReference.cache

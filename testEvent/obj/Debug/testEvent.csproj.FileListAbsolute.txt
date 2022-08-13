@@ -1,0 +1,7 @@
+E:\VB.NEt\F6Control\testEvent\bin\Debug\testEvent.pdb
+E:\VB.NEt\F6Control\testEvent\obj\Debug\testEvent.csprojResolveAssemblyReference.cache
+E:\VB.NEt\F6Control\testEvent\obj\Debug\testEvent.pdb
+E:\VB.NEt\F6Control\testEvent\obj\Debug\testEvent.Form3.resources
+E:\VB.NEt\F6Control\testEvent\obj\Debug\testEvent.csproj.GenerateResource.Cache
+E:\VB.NEt\F6Control\testEvent\bin\Debug\testEvent.exe
+E:\VB.NEt\F6Control\testEvent\obj\Debug\testEvent.exe

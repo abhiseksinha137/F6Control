@@ -1,0 +1,13 @@
+E:\VB.NEt\F6Control\F6Control\bin\Debug\F6Control.exe.config
+E:\VB.NEt\F6Control\F6Control\bin\Debug\F6Control.exe
+E:\VB.NEt\F6Control\F6Control\bin\Debug\F6Control.pdb
+E:\VB.NEt\F6Control\F6Control\obj\Debug\F6Control.csprojResolveAssemblyReference.cache
+E:\VB.NEt\F6Control\F6Control\obj\Debug\F6Control.Properties.Resources.resources
+E:\VB.NEt\F6Control\F6Control\obj\Debug\F6Control.csproj.GenerateResource.Cache
+E:\VB.NEt\F6Control\F6Control\obj\Debug\F6Control.exe
+E:\VB.NEt\F6Control\F6Control\obj\Debug\F6Control.pdb
+E:\VB.NEt\F6Control\F6Control\obj\Debug\F6Control.Form1.resources
+E:\VB.NEt\F6Control\F6Control\bin\Debug\customControl.dll
+E:\VB.NEt\F6Control\F6Control\bin\Debug\customControl.pdb
+E:\VB.NEt\F6Control\F6Control\bin\Debug\AForge.Video.DirectShow.dll
+E:\VB.NEt\F6Control\F6Control\bin\Debug\AForge.Video.dll
