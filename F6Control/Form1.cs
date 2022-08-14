@@ -25,6 +25,7 @@ namespace F6Control
         camera cam2;
         camera cam1;
         string geigerData="";
+        string doorData = "";
 
         private string stageBtnPressed;
 
@@ -47,35 +48,35 @@ namespace F6Control
             // Initialize Geiger
             commGeiger.baudrate = 115200;
             commGeiger.DataReceived += new customControl.ComboSerialComm(commGeiger_DataReceived);
+
+            // Initialize Door
+            comDoor.baudrate = 9600;
+            comDoor.DataReceived +=new  customControl.ComboSerialComm(commDoor_DataReceived);
         }
 
-        delegate void SetTextCallback(string text);
+        private void commDoor_DataReceived()
+        {
+            doorData = comDoor.ReadData();
+            Thread demoThreadDoor = new Thread(new ThreadStart(this.ThreadProcSafeUpdateDoor));
+            demoThreadDoor.Start();
+        }
+
+        private void ThreadProcSafeUpdateDoor()
+        {
+            ThreadHelperClass.SetText(this, lblDoor, doorData);
+        }
+
         private void commGeiger_DataReceived()
         {
             geigerData =formatString(commGeiger.ReadData());
-            Thread demoThread =
-       new Thread(new ThreadStart(this.ThreadProcSafe));
+            Thread demoThread =new Thread(new ThreadStart(this.ThreadProcSafeUpdateGeiger));
             demoThread.Start();
         }
-        private void ThreadProcSafe()
+        private void ThreadProcSafeUpdateGeiger()
         {
             ThreadHelperClass.SetText(this, lblGeigerData, geigerData);
         }
-        private void SetText(string text)
-        {
-            // InvokeRequired required compares the thread ID of the
-            // calling thread to the thread ID of the creating thread.
-            // If these threads are different, it returns true.
-            if (this.lblGeigerData.InvokeRequired)
-            {
-                SetTextCallback d = new SetTextCallback(SetText);
-                this.Invoke(d, new object[] { text });
-            }
-            else
-            {
-                this.lblGeigerData.Text = formatString(text);
-            }
-        }
+      
 
         public String formatString(string text)
         {
@@ -267,6 +268,16 @@ namespace F6Control
         private void commGeiger_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void conn3_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDoor_Click(object sender, EventArgs e)
+        {
+            comDoor.sendSerial("O");
         }
     }
 }

@@ -60,9 +60,12 @@
             this.label6 = new System.Windows.Forms.Label();
             this.commGeiger = new customControl.comboSerial();
             this.connStage = new customControl.comboSerial();
-            this.conn3 = new customControl.comboSerial();
+            this.comDoor = new customControl.comboSerial();
             this.connShutter = new customControl.comboSerial();
             this.label7 = new System.Windows.Forms.Label();
+            this.btnDoor = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lblDoor = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -132,7 +135,9 @@
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.conn3);
+            this.panel2.Controls.Add(this.lblDoor);
+            this.panel2.Controls.Add(this.btnDoor);
+            this.panel2.Controls.Add(this.comDoor);
             this.panel2.Location = new System.Drawing.Point(1026, 333);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(329, 176);
@@ -401,12 +406,13 @@
             this.connStage.Size = new System.Drawing.Size(102, 72);
             this.connStage.TabIndex = 1;
             // 
-            // conn3
+            // comDoor
             // 
-            this.conn3.Location = new System.Drawing.Point(3, 5);
-            this.conn3.Name = "conn3";
-            this.conn3.Size = new System.Drawing.Size(102, 72);
-            this.conn3.TabIndex = 2;
+            this.comDoor.Location = new System.Drawing.Point(3, 5);
+            this.comDoor.Name = "comDoor";
+            this.comDoor.Size = new System.Drawing.Size(102, 72);
+            this.comDoor.TabIndex = 2;
+            this.comDoor.Load += new System.EventHandler(this.conn3_Load);
             // 
             // connShutter
             // 
@@ -427,11 +433,43 @@
             this.label7.TabIndex = 10;
             this.label7.Text = "Radiation";
             // 
+            // btnDoor
+            // 
+            this.btnDoor.Location = new System.Drawing.Point(133, 54);
+            this.btnDoor.Name = "btnDoor";
+            this.btnDoor.Size = new System.Drawing.Size(75, 23);
+            this.btnDoor.TabIndex = 3;
+            this.btnDoor.Text = "Toogle Door";
+            this.btnDoor.UseVisualStyleBackColor = true;
+            this.btnDoor.Click += new System.EventHandler(this.btnDoor_Click);
+            // 
+            // label8
+            // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(1167, 315);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(38, 15);
+            this.label8.TabIndex = 11;
+            this.label8.Text = "Door";
+            // 
+            // lblDoor
+            // 
+            this.lblDoor.AutoSize = true;
+            this.lblDoor.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDoor.Location = new System.Drawing.Point(138, 99);
+            this.lblDoor.Name = "lblDoor";
+            this.lblDoor.Size = new System.Drawing.Size(70, 29);
+            this.lblDoor.TabIndex = 7;
+            this.lblDoor.Text = "Door";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1363, 706);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -452,6 +490,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -475,7 +514,7 @@
         private System.Windows.Forms.Panel panel6;
         private customControl.comboSerial connShutter;
         private System.Windows.Forms.Label label1;
-        private customControl.comboSerial conn3;
+        private customControl.comboSerial comDoor;
         private customControl.comboSerial connStage;
         private customControl.comboSerial commGeiger;
         private System.Windows.Forms.PictureBox picCam1;
@@ -501,6 +540,9 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblGeigerData;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblDoor;
+        private System.Windows.Forms.Button btnDoor;
+        private System.Windows.Forms.Label label8;
     }
 }
 
